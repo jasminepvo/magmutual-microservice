@@ -7,11 +7,6 @@ require("dotenv").config({ path: "./config/.env" });
 connectDB();
 const mainRoutes = require("./routes/main");
 
-// app.get("/", (req, res) => {
-// 	// Start where server.js file is then find index.html
-// 	res.sendFile(__dirname + "/index.html");
-// });
-
 // Set Middleware
 app.set("view engine", "ejs");
 app.use(express.static("public"));
