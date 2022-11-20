@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.buttonStyle {
+    @apply relative active:shadow-none active:top-[4px] active:left-[4px];
+}
