@@ -1,7 +1,5 @@
 # MagMutual Microservice
-
-Microservices are great for replacing older monolithic systems.
-![Screen Shot 2022-11-20 at 6 20 38 PM](https://user-images.githubusercontent.com/99847030/202932019-9436a940-4d93-462b-952d-9d5e62782305.jpg)
+![Screen Shot 2022-11-20 at 6 32 14 PM](https://user-images.githubusercontent.com/99847030/202932501-9c61810a-3d0c-4081-9b29-3109a4a8a2fc.jpg)
 
 Based on a CSV of user information; I built the following endpoints and displayed them in a simple UI:
 
