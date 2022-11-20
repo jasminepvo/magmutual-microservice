@@ -1,0 +1,39 @@
+<%- include('partials/header.ejs') %>
+
+<!-- Intro Section -->
+<section
+	class="block border-solid border-2 border-border shadow-button w-11/12 md:w-6/12 lg:w-3/12 p-10 mx-auto"
+>
+	<h2 class="text-xl font-semibold pb-2">Thanks for stopping by!</h2>
+	<p class="text-l font-normal">
+		Use the endpoints below to return relevant data
+	</p>
+</section>
+
+<!-- Login or Signup -->
+<section class="block">
+	<!-- Links to endpoints -->
+	<a
+		href="/user"
+		class="buttonStyle block text-center text-l text-white font-bold bg-buttonBg w-6/12 md:w-4/12 lg:w-1/12 py-1 shadow-button my-5 mx-auto"
+		>/user</a
+	>
+	<!-- Links to signup page -->
+	<a
+		href="/getAllUsersByDateRange"
+		class="buttonStyle block text-center text-l text-white font-bold bg-buttonBg w-6/12 md:w-4/12 lg:w-1/12 py-1 shadow-button my-5 mx-auto"
+		>/getAllUsersByDateRange</a
+	>
+	<a
+		href="/getAllUsersByProfession"
+		class="buttonStyle block text-center text-l text-white font-bold bg-buttonBg w-6/12 md:w-4/12 lg:w-1/12 py-1 shadow-button my-5 mx-auto"
+		>/getAllUsersByProfession</a
+	>
+	<a
+		href="/getAllUsersByCountry"
+		class="buttonStyle block text-center text-l text-white font-bold bg-buttonBg w-6/12 md:w-4/12 lg:w-1/12 py-1 shadow-button my-5 mx-auto"
+		>/getAllUsersByCountry</a
+	>
+</section>
+
+<%- include('partials/footer.ejs') %>

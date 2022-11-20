@@ -1,25 +1,26 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
-const cors = require("cors");
+const logger = require("morgan");
 const connectDB = require("./config/database");
 require("dotenv").config({ path: "./config/.env" });
-
-// Enable cors
-var corsOptions = {
-	origin: "http://localhost:3002",
-};
-app.use(cors(corsOptions));
-
-// Connect to the database
 connectDB();
+const mainRoutes = require("./routes/main");
 
-const hello = "Hello MagMutual";
+// app.get("/", (req, res) => {
+// 	// Start where server.js file is then find index.html
+// 	res.sendFile(__dirname + "/index.html");
+// });
+
+// Set Middleware
+app.set("view engine", "ejs");
+app.use(express.static("public"));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(logger("dev"));
 
 // Set Routes
-app.get("/", (req, res) => {
-	res.json(hello);
-});
+app.use("/", mainRoutes);
 
 // Set PORT, listen for requests
 const PORT = process.env.PORT || 3001;
