@@ -4,14 +4,13 @@ Microservices are great for replacing older monolithic systems.
 
 Based on a CSV of user information; I built the following endpoints and displayed them in a simple UI:
 
-- Endpoint to return a specific user (and all associated information)
-  `/user`
-- Endpoint to return a list of users created between a date range
-  `/user-date `
-- Endpoint to return a list of users based on a specific profession
-  `/user-profession `
-- Endpoint to return a list of users based on specific country
-  `/user-country `
+- Return a specific user (and all associated information): ` GET /api/user`
+- Return a list of users created between a date range
+  `GET api/user-date `
+- Return a list of users based on a specific profession
+  `GET api/user-profession `
+- Return a list of users based on specific country
+  `GET api/user-country `
 
 ## Tech Stack
 
