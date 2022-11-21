@@ -1,6 +1,6 @@
-# MagMutual Microservice
+# MagMutual Microservice - [link](https://hilarious-calf-skirt.cyclic.app/)
 
-![Screen Shot 2022-11-20 at 6 32 14 PM](https://user-images.githubusercontent.com/99847030/202932501-9c61810a-3d0c-4081-9b29-3109a4a8a2fc.jpg)
+![magmutual-microservice](https://user-images.githubusercontent.com/99847030/202971402-f33f9588-9f56-46cb-9316-4d7d385cffb5.png)
 
 Based on a CSV of user information; I built the following endpoints and displayed them in a simple UI:
 
