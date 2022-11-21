@@ -2,7 +2,7 @@
 
 <!-- Intro Section -->
 <section
-	class="block border-solid border-2 border-border shadow-button w-11/12 md:w-6/12 lg:w-3/12 p-10 mx-auto"
+	class="block border-solid border-2 border-border shadow-button w-11/12 md:w-6/12 p-10 mx-auto"
 >
 	<h2 class="text-xl font-semibold pb-2 text-center">
 		Microservices are great for replacing older monolithic systems.
@@ -13,26 +13,98 @@
 </section>
 
 <!-- Links to endpoints -->
-<section class="block">
+<section class="block p-10">
 	<a
-		href="/user"
-		class="buttonStyle block text-center text-l text-white font-bold bg-buttonBg w-6/12 md:w-4/12 lg:w-1/12 py-1 shadow-button my-5 mx-auto"
-		>/user</a
+		href="https://hilarious-calf-skirt.cyclic.app/user/100"
+		class="buttonStyle block text-center text-l text-white font-bold bg-buttonBg w-6/12 md:w-4/12 py-1 shadow-button my-5 mx-auto"
+		>/user/id</a
+	>
+	<code
+		class="block border-solid border-2 border-moodPurple shadow-button w-11/12 md:w-6/12 p-10 mx-auto"
+		>GET /user/100 <br />
+		<br />{ <br />"_id": "637add6bc435b74d221e4750",<br />
+		"id": 100,<br />
+		"firstname": "Andree",<br />
+		"lastname": "Flita",<br />
+		"email": "Andree.Flita@gmail.com",<br />
+		"profession": "worker", <br />"dateCreated": "2020-08-31T00:00:00.000Z",<br />
+		"country": "Wallis and Futuna",<br />
+		"city": "Nanjing"<br />
+		}</code
 	>
 	<a
-		href="/getAllUsersByDateRange"
-		class="buttonStyle block text-center text-l text-white font-bold bg-buttonBg w-6/12 md:w-4/12 lg:w-1/12 py-1 shadow-button my-5 mx-auto"
+		href="https://hilarious-calf-skirt.cyclic.app/user/dates/2020-06-01/2020-06-03"
+		class="buttonStyle block text-center text-l text-white font-bold bg-buttonBg w-6/12 md:w-4/12 py-1 shadow-button my-5 mx-auto"
 		>/getAllUsersByDateRange</a
 	>
+	<code
+		class="block border-solid border-2 border-moodPurple shadow-button w-11/12 md:w-6/12 p-10 mx-auto text-sm"
+	>
+		GET /user/dates/2020-06-01/2020-06-03<br /><br />
+
+		{<br />
+		"_id": "637add6bc435b74d221e481f",<br />
+		"id": 307,<br />
+		"firstname": "Annabela",<br />
+		"lastname": "Xerxes",<br />
+		"email": "Annabela.Xerxes@gmail.com",<br />
+		"profession": "worker",<br />
+		"dateCreated": "2020-06-02T00:00:00.000Z",<br />
+		"country": "Tunisia",<br />
+		"city": "Yaoundé"<br />
+		},<br />
+		{<br />
+		"_id": "637add6bc435b74d221e499b",<br />
+		"id": 687,<br />
+		"firstname": "Lilith",<br />
+		"lastname": "Darrell",<br />
+		"email": "Lilith.Darrell@gmail.com",<br />
+		"profession": "worker",<br />
+		"dateCreated": "2020-06-02T00:00:00.000Z",<br />
+		"country": "Åland Islands",<br />
+		"city": "Sukhumi"<br />
+		},
+	</code>
 	<a
-		href="/getAllUsersByProfession"
-		class="buttonStyle block text-center text-l text-white font-bold bg-buttonBg w-6/12 md:w-4/12 lg:w-1/12 py-1 shadow-button my-5 mx-auto"
+		href="https://hilarious-calf-skirt.cyclic.app/user/profession/doctor"
+		class="buttonStyle block text-center text-l text-white font-bold bg-buttonBg w-6/12 md:w-4/12 py-1 shadow-button my-5 mx-auto"
 		>/getAllUsersByProfession</a
 	>
+	<code
+		class="block border-solid border-2 border-moodPurple shadow-button w-11/12 md:w-6/12 p-10 mx-auto"
+		>GET /user/profession/doctor <br />
+		<br />{ <br />
+		"_id": "637add6bc435b74d221e4753",<br />
+		"id": 103,<br />
+		"firstname": "Marline",<br />
+		"lastname": "Clie",<br />
+		"email": "Marline.Clie@gmail.com",<br />
+		"profession": "doctor",<br />
+		"dateCreated": "2020-03-30T00:00:00.000Z",<br />
+		"country": "Hong Kong",<br />
+		"city": "Dongguan"
+		<br />
+		}</code
+	>
 	<a
-		href="/getAllUsersByCountry"
-		class="buttonStyle block text-center text-l text-white font-bold bg-buttonBg w-6/12 md:w-4/12 lg:w-1/12 py-1 shadow-button my-5 mx-auto"
+		href="https://hilarious-calf-skirt.cyclic.app/user/country/Greenland"
+		class="buttonStyle block text-center text-l text-white font-bold bg-buttonBg w-6/12 md:w-4/12 py-1 shadow-button my-5 mx-auto"
 		>/getAllUsersByCountry</a
+	>
+	<code
+		class="block border-solid border-2 border-moodPurple shadow-button w-11/12 md:w-6/12 p-10 mx-auto"
+		>GET /user/country/Greenland <br />
+		<br />{ <br />
+		"_id": "637add6bc435b74d221e4754",<br />
+		"id": 104,<br />
+		"firstname": "Lanae",<br />
+		"lastname": "Salvidor",<br />
+		"email": "Lanae.Salvidor@gmail.com",<br />
+		"profession": "doctor",<br />
+		"dateCreated": "2022-07-18T00:00:00.000Z",<br />
+		"country": "Greenland"<br />, "city": "Banjul"
+		<br />
+		}</code
 	>
 </section>
 
