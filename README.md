@@ -55,7 +55,6 @@ Based on a CSV of user information; I built the following endpoints and displaye
 
 - Return a list of users based on a specific profession:
   `GET /user/profession/doctor `
-  Data:
 
 ```
 {
