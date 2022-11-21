@@ -4,8 +4,7 @@
   "description": "Microservices are great for replacing older monolithic systems.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js tailwindcss -i src/style.css -o public/style.css --watch",
-
+    "start": "node server.js tailwindcss -i src/style.css -o public/style.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
