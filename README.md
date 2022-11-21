@@ -17,7 +17,7 @@ Based on a CSV of user information; I built the following endpoints and displaye
         "dateCreated": "2020-08-31T00:00:00.000Z",
         "country": "Wallis and Futuna",
         "city": "Nanjing"
-    }
+}
 ```
 
 - Return a list of users created between a date range:
@@ -27,15 +27,15 @@ Based on a CSV of user information; I built the following endpoints and displaye
 
 [
   {
-    "_id": "637add6bc435b74d221e481f",
-    "id": 307,
-    "firstname": "Annabela",
-    "lastname": "Xerxes",
-    "email": "Annabela.Xerxes@gmail.com",
-    "profession": "worker",
-    "dateCreated": "2020-06-02T00:00:00.000Z",
-    "country": "Tunisia",
-    "city": "Yaoundé"
+        "_id": "637add6bc435b74d221e481f",
+        "id": 307,
+        "firstname": "Annabela",
+        "lastname": "Xerxes",
+        "email": "Annabela.Xerxes@gmail.com",
+        "profession": "worker",
+        "dateCreated": "2020-06-02T00:00:00.000Z",
+        "country": "Tunisia",
+        "city": "Yaoundé"
   },
   {
     "_id": "637add6bc435b74d221e499b",
@@ -67,7 +67,7 @@ Based on a CSV of user information; I built the following endpoints and displaye
       "dateCreated": "2020-03-30T00:00:00.000Z",
       "country": "Hong Kong",
       "city": "Dongguan"
-  },
+},
 ```
 
 - Return a list of users based on specific country:
